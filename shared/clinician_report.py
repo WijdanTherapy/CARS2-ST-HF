@@ -583,12 +583,11 @@ def generate_clinician_pdf(
 
     # ── SECTION 7: CLINICAL NARRATIVE ────────────────────────────────────────
     sec_num2 = sec_num + 1
-    story.append(_section_banner(f"{sec_num2}. AI-Assisted Clinical Narrative", styles))
+    story.append(_section_banner(f"{sec_num2}. Clinical Narrative", styles))
     story.append(Spacer(1, 6))
     story.append(Paragraph(
-        "<i>The following narrative was generated with AI assistance based on the assessment data "
-        "and is intended to support — not replace — clinical judgment. It should be reviewed "
-        "and edited by the responsible clinician before inclusion in any formal report.</i>",
+        "<i>The following narrative and score interpretation "
+        " is intended to support — not replace — clinical judgment.</i>",
         styles["small"]
     ))
     story.append(Spacer(1, 6))
